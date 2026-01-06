@@ -50,6 +50,7 @@ footer{
   min-width: 940px;
   margin: 0 250px;
   width: 100%;
+  height: 100%;
 }
 .logo {
 height: 100%;
@@ -282,10 +283,11 @@ color:#fff ;
   flex-direction: column;
   align-items: center;
   justify-content: center; 
- background-image: url(/img-konstrut/bgcity.png);
- background-size: 100%;
- background-repeat: no-repeat;
- height: 40vh;
+  background-image: url(./img-konstrut/bgcity.png);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .want_build_main {
@@ -294,6 +296,8 @@ color:#fff ;
    align-items: center;
   justify-content: center;
   padding-top: 120px;
+
+
 }
 .want_build_main>h2 {
 font-size: 30px;
