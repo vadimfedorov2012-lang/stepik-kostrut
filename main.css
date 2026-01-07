@@ -7,7 +7,7 @@
 body{
   margin: 0;
   padding: 0;
-  
+  margin: 0 auto;
 }
 img{
     max-width: 100%;
@@ -34,23 +34,25 @@ footer{
   
 }
 .header{
-   display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; 
   background-image: url(./img-konstrut/bg.png) ;
-      background-size: 100%;
-      background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 768px;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 1090px;
   }
 .container {
   max-width: 940px;
-  min-width: 940px;
   margin: 0 250px;
   width: 100%;
   height: 100%;
+}
+.new{
+  margin: 0 auto;
 }
 .logo {
 height: 100%;
@@ -67,10 +69,9 @@ justify-content: space-between;
 }
 
 .logo_text  {
-  height: auto;
-  width: auto;
   color: white;
   text-align: center;
+  margin: 0 auto;
 }
 .logo_text>h1  {
   font-size: 60px;
@@ -134,12 +135,13 @@ justify-content: space-between;
   margin-right: 48px;
   padding: 25px 0;
 }
+.nav>ul>a:hover{
+  color: #00A4E5;
+}
 .nav>ul>a:last-child{
   margin-right: 0px;
 }
-.choice{
-  color: #00A4E5;
-}
+
 /* Первый блок с информацией*/
 
  .our_story {
@@ -378,12 +380,14 @@ height: 40px;
   font-size: 11px;
   padding: 46px 0;
 }
-.container {
-}
+
 .footer_main {
   height: 100%;
   display: flex;
   justify-content: space-between;
+}
+.footer_main h6 {
+  font-size: 11px;
 }
 .company_footer {
   display: flex;
@@ -463,20 +467,22 @@ padding-bottom: 10px;
   padding: 0;
 }
 .contact_footer>h6 {
-   padding: 0 0 15px;
+   padding: 0 0 11px;
    margin: 0;
 }
 .contact_footer>address {
   width: 128px;
-  
+  line-height: 16px;
+  font-weight: 300;
 }
 .contact_footer>p {
-  margin: 0;
-  padding-top: 16px;
+
   
 }
-.number {
+.number{
+margin: 22px 0;
 }
+
 .email {
 }
 .socials_footer {
