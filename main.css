@@ -7,11 +7,9 @@
 body{
   margin: 0;
   padding: 0;
-  margin: 0 auto;
 }
 img{
     max-width: 100%;
-    height: auto;
     display: block;
 }
 a{  
@@ -20,10 +18,6 @@ a{
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); 
-.header_main {
-  height: 100%;
-   
-}
 
 footer{
   display: block;
@@ -31,7 +25,6 @@ footer{
 .header_main{
   border-bottom: 1px solid #E6E6E6; /* Создает полосу внизу блока */
   height: 100%;
-  
 }
 .header{
   display: flex;
@@ -39,39 +32,50 @@ footer{
   align-items: center;
   justify-content: center; 
   background-image: url(./img-konstrut/bg.png) ;
-  background-size: 100%;
-  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 1090px;
+  height: 100%;
+  min-height: 764px;
+  min-width: 1440px;
+
   }
 .container {
-  max-width: 940px;
-  margin: 0 250px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0  250px;
   width: 100%;
-  height: 100%;
 }
 .new{
   margin: 0 auto;
 }
 .logo {
-height: 100%;
+height: 764px;
+width: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
 justify-content: space-between;
+
 }
-.logo>a>img{
-    max-height: 23px;    /* Сохраняем пропорции */
+.logo>a{
+    height: 23px;    /* Сохраняем пропорции */
     max-width: 101px;
     margin-top: 45px;
+    width: 100%;
+}
+.logo>a>img{
+    height: 23px;    /* Сохраняем пропорции */
+    max-width: 101px;
+    width: 100%;
 }
 
 .logo_text  {
   color: white;
   text-align: center;
   margin: 0 auto;
+  width: 100%;
 }
 .logo_text>h1  {
   font-size: 60px;
@@ -86,25 +90,20 @@ justify-content: space-between;
 }
 
 .logo_down_text {
-  margin-bottom: 71px;
+  margin-bottom: 67px;
+  text-align: center;
+  width: 100%;
 }
 .logo_down_text>a {
   color: white;
   font-size: 15px;
   text-transform: uppercase;
   font-weight: 600;
+  width: 100%;
 }
 /* Верхушка где фоновое изображение*/
 /* Что ниже это навигация*/
-.main{
-  height: 100%;
- 
-}
 
-.navigation{
-
-  
-}
 .nav{
   display: flex;
   justify-content: space-between;
@@ -155,7 +154,7 @@ justify-content: space-between;
 .our_story h2 {
 position: relative;
 max-width: 143px;
-margin: 0 auto;
+margin: 0 auto 96px;
 
 }
 .our_story h2::after {
@@ -168,16 +167,12 @@ left: 49px;
 margin: 0 auto;
 
 }
-.container {
-}
-.story{
-   padding-top: 95px; 
-   max-width: 941px;
-   width: 100%;
-}
 .story_body {
   display: flex;
   justify-content: space-between;
+  padding-top: 95px; 
+   max-width: 941px;
+   width: 100%;
 }
 .story_left {
   display: flex;
@@ -185,6 +180,7 @@ margin: 0 auto;
   width: 405px;
  
 }
+
 .top{
   font-size: 20px;
   font-weight: bold;
@@ -197,22 +193,77 @@ margin: 0 auto;
 }
 .story_img {
     display: flex;
-    flex-wrap: wrap;
 }
 .story_img>img {
   max-width: 140px;
-    width: 100%;
+  width: 100%;
+
 }
 
-.capabilities {
-  margin: 118px 0 115px 0;
-   display: flex;
+@media screen and (max-width:1355px) {
+   .our_story {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; 
+  margin-top: 58px;
+  height: 100%;
+}
+
+  .our_story h2 {
+position: relative;
+max-width: 143px;
+margin: 0 auto 36px;
+
+}
+.our_story h2::after {
+  content: "";
+  width: 50px;
+border-bottom: 2px  solid  #00A4E5;
+position: absolute;
+top: 36px;
+left: 49px;
+margin: 0 auto;
+
+}
+  .story_body{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; 
+  max-width: 941px;
+  width: 100%;
+  padding-top: 0px; 
+}
+.story_img{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.capabilities {
+    margin: 118px auto;
 }
 
 .capabilities_main {
+  width: 940px;
+  height: 446px;
 }
 .capabilities_top {
   display: flex;
@@ -256,9 +307,10 @@ color:#fff ;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 38px 23px;
+  padding: 37px 23px;
   border: 1px solid #E6E6E6;
-  
+  width: 295px;
+  height: 330px;
 }
 .capabilities_service>img {
   padding-bottom: 25px;
@@ -276,30 +328,42 @@ color:#fff ;
   width: 250px;
 }
 
+@media screen and (max-width:1355px) {
+  
+}
 
 
 
 
-.want_build {
-   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+.want_build { 
   background-image: url(./img-konstrut/bgcity.png);
-  height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  width: 100%;
+  height: 100%;
+  min-width: 1440px;
 }
 
 .want_build_main {
  display: flex;
  flex-direction: column;
-   align-items: center;
+  align-items: center;
   justify-content: center;
-  padding-top: 120px;
-
-
+  padding-bottom: 232px;
 }
 .want_build_main>h2 {
 font-size: 30px;
@@ -327,10 +391,7 @@ height: 40px;
 
 .mail {
   background-color: #171819;
-   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; 
+  min-width: 1440px;
 }
 
 .mail_main {
@@ -370,15 +431,12 @@ height: 40px;
 
 
 .footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; 
   color: #fff;
   background-color: #141A20;
   height: 100%;
   font-size: 11px;
   padding: 46px 0;
+  min-width: 1440px;
 }
 
 .footer_main {
@@ -505,16 +563,13 @@ margin: 22px 0;
 
 .copyright{
   background-color: #171819;
-   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; 
+   min-width: 1440px;
 }
 .copyright_main {
    display: flex;
    align-items: center;
    justify-content: center;
-   margin: 23px 0;
+   padding: 23px 0;
 }
 .copyright_main>p {
  font-size: 11px;
